@@ -1,0 +1,16 @@
+public_service.region.*:
+  type: config_entity
+  label: 'Region'
+  mapping:
+    id:
+      type: string
+      label: 'ISO'
+    uuid:
+      type: string
+      label: 'UUID'
+    name:
+      type: string
+      label: 'Name'
+    langcode:
+      type: string
+      label: 'Default language'

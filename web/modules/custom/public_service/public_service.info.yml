@@ -1,0 +1,8 @@
+name: 'Public service'
+type: module
+description: 'A sandbox module to arrange public services.'
+package: YRV
+core_version_requirement: ^9
+dependencies:
+  - drupal:taxonomy
+version: '1.0.0'

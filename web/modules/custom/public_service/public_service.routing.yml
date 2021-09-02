@@ -1,0 +1,39 @@
+system.admin_public_service:
+  path: '/admin/public-service'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Public service'
+  requirements:
+    _permission: 'access administration pages'
+
+entity.region.list:
+  path: '/admin/public-service/region'
+  defaults:
+    _entity_list: region
+    _title: 'Administer regions'
+  requirements:
+    _permission: 'administer regions'
+
+entity.region.add_form:
+  path: '/admin/public-service/region/add'
+  defaults:
+    _title: 'Add region'
+    _entity_form: region.add
+  requirements:
+    _entity_create_access: region
+
+entity.region.edit_form:
+  path: '/admin/public-service/region/manage/{region}'
+  defaults:
+    _title: 'Edit region'
+    _entity_form: region.edit
+  requirements:
+    _entity_access: region.update
+
+entity.region.delete_form:
+  path: '/admin/public-service/region/manage/{region}/delete'
+  defaults:
+    _title: 'Delete region'
+    _entity_form: region.delete
+  requirements:
+    _entity_access: region.delete

@@ -27,3 +27,5 @@ drush/Commands
 web/themes/custom/*/node_modules
 web/themes/custom/*/css
 web/themes/custom/*/styleguide
+
+/.php_cs.cache

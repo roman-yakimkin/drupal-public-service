@@ -1,0 +1,12 @@
+system.admin_public_service:
+  route_name: system.admin_public_service
+  parent: system.admin
+  title: Public service
+  description: 'Configure public service.'
+  weight: 100
+
+public_service.region.list:
+  title: Regions
+  route_name: entity.region.list
+  parent: system.admin_public_service
+  weight: 0

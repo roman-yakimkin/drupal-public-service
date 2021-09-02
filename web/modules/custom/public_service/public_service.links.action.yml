@@ -1,0 +1,12 @@
+public_service.region.add_action:
+  route_name: entity.region.add_form
+  title: 'Add region'
+  appears_on:
+    - entity.region.list
+
+public_service.region.list_action:
+  route_name: entity.region.list
+  title: 'Regions'
+  appears_on:
+    - entity.region.add_form
+    - entity.region.edit_form
