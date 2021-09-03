@@ -7,6 +7,12 @@ system.admin_public_service:
 
 public_service.region.list:
   title: Regions
-  route_name: entity.region.list
+  route_name: entity.region.collection
   parent: system.admin_public_service
   weight: 0
+
+public_service.category.list:
+  title: Categories
+  route_name: entity.category.collection
+  parent: system.admin_public_service
+  weight: 10

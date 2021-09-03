@@ -93,9 +93,13 @@ class Region extends ConfigEntityBase {
    *
    * @param string $name
    *   The name of the region.
+   *
+   * @return \Drupal\public_service\Entity\Region
+   *   The instance of entity.
    */
   public function setName(string $name) {
     $this->name = $name;
+    return $this;
   }
 
 }

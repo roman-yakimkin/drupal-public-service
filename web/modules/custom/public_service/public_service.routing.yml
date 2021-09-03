@@ -6,7 +6,7 @@ system.admin_public_service:
   requirements:
     _permission: 'access administration pages'
 
-entity.region.list:
+entity.region.collection:
   path: '/admin/public-service/region'
   defaults:
     _entity_list: region
@@ -37,3 +37,35 @@ entity.region.delete_form:
     _entity_form: region.delete
   requirements:
     _entity_access: region.delete
+
+entity.category.collection:
+  path: '/admin/public-service/category'
+  defaults:
+    _entity_list: category
+    _title: 'Administer categories'
+  requirements:
+    _permission: 'administer categories'
+
+entity.category.add_form:
+  path: '/admin/public-service/category/add'
+  defaults:
+    _entity_form: category.default
+    _title: 'Add public service category'
+  requirements:
+    _permission: 'administer categories'
+
+entity.category.edit_form:
+  path: '/admin/public-service/category/manage/{category}'
+  defaults:
+    _entity_form: category.default
+    _title: 'Edit public service category'
+  requirements:
+    _permission: category.update
+
+entity.category.delete_form:
+  path: '/admin/public-service/category/manage/{category}/delete'
+  defaults:
+    _entity_form: category.delete
+    _title: 'Delete public service category'
+  requirements:
+    _entity_access: category.delete

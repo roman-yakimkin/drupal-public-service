@@ -2,11 +2,24 @@ public_service.region.add_action:
   route_name: entity.region.add_form
   title: 'Add region'
   appears_on:
-    - entity.region.list
+    - entity.region.collection
 
 public_service.region.list_action:
-  route_name: entity.region.list
+  route_name: entity.region.collection
   title: 'Regions'
   appears_on:
     - entity.region.add_form
     - entity.region.edit_form
+
+public_service.category.add_action:
+  route_name: entity.category.add_form
+  title: 'Add category'
+  appears_on:
+    - entity.category.collection
+
+public_service.category.list_action:
+  route_name: entity.category.collection
+  title: 'Categories'
+  appears_on:
+    - entity.category.add_form
+    - entity.category.edit_form

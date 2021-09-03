@@ -14,3 +14,20 @@ public_service.region.*:
     langcode:
       type: string
       label: 'Default language'
+
+public_service.category.*:
+  type: config_entity
+  label: 'Category'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    uuid:
+      type: string
+      label: 'UUID'
+    name:
+      type: string
+      label: 'Name'
+    langcode:
+      type: string
+      label: 'Default language'
