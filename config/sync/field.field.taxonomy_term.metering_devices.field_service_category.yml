@@ -1,0 +1,23 @@
+uuid: 7c1e5cc1-2449-46a4-9406-53917b06e565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_service_category
+    - taxonomy.vocabulary.metering_devices
+id: taxonomy_term.metering_devices.field_service_category
+field_name: field_service_category
+entity_type: taxonomy_term
+bundle: metering_devices
+label: 'Service category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:category'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference
