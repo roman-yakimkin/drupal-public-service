@@ -35,7 +35,7 @@ class CategoryForm extends EntityForm {
       '#required' => TRUE,
       '#size' => 30,
       '#maxlength' => 64,
-      '#description' => $this->t('The name of the category. Example: "Electricity supply", "Gas supply".')
+      '#description' => $this->t('The name of the category. Example: "Electricity supply", "Gas supply".'),
     ];
 
     return parent::form($form, $form_state, $category);

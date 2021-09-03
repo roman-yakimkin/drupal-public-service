@@ -1,0 +1,31 @@
+<?php
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Add some metering devices programmatically.
+ */
+function public_service_update_9001() {
+  $metering_devices = [
+    ['CE101-R5', '5', 'electricity'],
+    ['CE200-R5', '5', 'electricity'],
+    ['INCOTEX Меркурий 201.7 5(60) А', '5', 'electricity'],
+    ['BK G4', '5', 'gas'],
+    ['NPM G4', '5', 'gas'],
+    ['Gallus 2000 G 4', '5', 'gas'],
+    ['ITELMA WFW20.D110 ¾', '5', 'water'],
+    ['VALTEC VLF-15U', '4', 'water'],
+  ];
+
+  foreach ($metering_devices as [$name, $valency, $category]) {
+    $term = Term::create([
+      'vid' => 'metering_devices',
+      'name' => $name,
+      'field_valency' => [(int)$valency],
+      'field_service_category' => [
+        'target_id' => $category,
+      ],
+    ]);
+    $term->save();
+  }
+}
