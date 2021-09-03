@@ -1,0 +1,8 @@
+uuid: b25a3b6e-3175-4eb3-9687-f896cdd93691
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BVb3ae1T4idokWDknyMtvARk-AI8g_HkErEwkhdsu3o
+id: RU-ROS
+name: 'Rostov-on-Don region'

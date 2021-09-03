@@ -1,0 +1,8 @@
+uuid: 1447139c-f178-43f4-b0eb-939d06347209
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3hXzicENmdxz4-PDlCvRr1PAijysbl3UHV2Wr-HisZ4
+id: RU-MOS
+name: 'Moscow region'
