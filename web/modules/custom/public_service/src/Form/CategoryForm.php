@@ -63,7 +63,7 @@ class CategoryForm extends EntityForm {
       $this->messenger()->addStatus($this->t('Category %name has been added.', [
         '%name' => $category->getName(),
       ]));
-      $this->logger('user')->notice('Category %name has been added.', [
+      $this->logger('public_service')->notice('Category %name has been added.', [
         '%name' => $category->getName(),
         'link' => $edit_link,
       ]);
