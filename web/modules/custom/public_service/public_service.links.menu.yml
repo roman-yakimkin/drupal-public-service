@@ -16,3 +16,9 @@ public_service.category.list:
   route_name: entity.category.collection
   parent: system.admin_public_service
   weight: 10
+
+public_service.device.list:
+  title: Devices
+  route_name: entity.device.collection
+  parent: system.admin_public_service
+  weight: 20

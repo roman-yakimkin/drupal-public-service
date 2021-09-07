@@ -4,3 +4,14 @@
 'administer categories':
   title: 'Administer categories'
   description: Create and edit categories.
+'delete device entity':
+  title: Delete device entity.
+'add device entity':
+  title: Add device entity.
+'view device entity':
+  title: View device entity
+'edit device entity':
+  title: Edit device entity
+'administer device entity':
+  title: Administer device settings
+

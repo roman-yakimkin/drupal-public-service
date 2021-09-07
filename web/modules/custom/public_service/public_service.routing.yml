@@ -69,3 +69,44 @@ entity.category.delete_form:
     _title: 'Delete public service category'
   requirements:
     _entity_access: category.delete
+
+entity.device.canonical:
+  path: '/device/{device}'
+  defaults:
+    _entity_view: device
+    _title: 'Device'
+  requirements:
+    _entity_access: device.view
+
+entity.device.collection:
+  path: '/device/list'
+  defaults:
+    _entity_list: device
+    _title: 'Device list'
+  requirements:
+    _permission: 'view device entity'
+
+entity.device.add_form:
+  path: '/device/add'
+  defaults:
+    _entity_form: device.default
+    _title: 'Add device'
+  requirements:
+    _entity_create_access: device
+
+entity.device.edit_form:
+  path: '/device/{device}/edit'
+  defaults:
+    _entity_form: device.default
+    _title: 'Edit device'
+  requirements:
+    _entity_access: 'device.update'
+
+entity.device.delete_form:
+  path: '/device/{device}/delete'
+  defaults:
+    _entity_form: device.delete
+    _title: 'Delete device'
+  requirements:
+    _entity_access: 'device.delete'
+
