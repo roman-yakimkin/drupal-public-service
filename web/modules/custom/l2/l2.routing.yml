@@ -13,3 +13,11 @@ d2.simple_form_controller:
     _controller: '\Drupal\l2\Controller\SimpleFormController::outputSimpleForm'
   requirements:
     _permission: 'access content'
+
+d2.ajax_form:
+  path: '/ajax-form'
+  defaults:
+    _title: 'Ajax form.'
+    _form: '\Drupal\l2\Form\AjaxForm'
+  requirements:
+    _permission: 'access content'

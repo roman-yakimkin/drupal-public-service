@@ -11,3 +11,10 @@ d2.menu.simple_form_controller:
   title: Simple Form (controller)
   description: 'Simple Form via Controller'
   weight: 10
+
+d2.menu.ajax_form:
+  route_name: d2.ajax_form
+  menu_name: 'main'
+  title: Ajax Form
+  description: 'Ajax Form'
+  weight: 20
