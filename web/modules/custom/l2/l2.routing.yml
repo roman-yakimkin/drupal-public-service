@@ -1,0 +1,15 @@
+d2.simple_form:
+  path: '/simple-form'
+  defaults:
+    _title: 'Simple form.'
+    _form: '\Drupal\l2\Form\SimpleForm'
+  requirements:
+    _permission: 'access content'
+
+d2.simple_form_controller:
+  path: '/simple-form-controller'
+  defaults:
+    _title: 'Simple form via controller.'
+    _controller: '\Drupal\l2\Controller\SimpleFormController::outputSimpleForm'
+  requirements:
+    _permission: 'access content'

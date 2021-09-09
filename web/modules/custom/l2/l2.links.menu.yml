@@ -1,0 +1,13 @@
+d2.menu.simple_form:
+  route_name: d2.simple_form
+  menu_name: 'main'
+  title: Simple Form
+  description: 'Simple Form'
+  weight: 0
+
+d2.menu.simple_form_controller:
+  route_name: d2.simple_form_controller
+  menu_name: 'main'
+  title: Simple Form (controller)
+  description: 'Simple Form via Controller'
+  weight: 10
