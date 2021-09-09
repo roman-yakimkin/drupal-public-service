@@ -110,3 +110,18 @@ entity.device.delete_form:
   requirements:
     _entity_access: 'device.delete'
 
+system.public_service.default_settings:
+  path: '/admin/public-service/plugin-settings'
+  defaults:
+    _controller: '\Drupal\public_service\Controller\PublicServiceSettingsController::default'
+    _title: 'Default settings'
+  requirements:
+    _permission: 'access administration pages'
+
+system.public_service.regional_settings:
+  path: '/admin/public-service/regional-settings'
+  defaults:
+    _controller: '\Drupal\public_service\Controller\PublicServiceSettingsController::regional'
+    _title: 'Regional settings'
+  requirements:
+    _permission: 'access administration pages'

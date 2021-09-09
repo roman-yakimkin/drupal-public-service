@@ -22,3 +22,15 @@ public_service.device.list:
   route_name: entity.device.collection
   parent: system.admin_public_service
   weight: 20
+
+public_service.plugin.default_settings:
+  title: Default settings
+  route_name: system.public_service.default_settings
+  parent: system.admin_public_service
+  weight: 30
+
+public_service.plugin.regional_settings:
+  title: Regional settings
+  route_name: system.public_service.regional_settings
+  parent: system.admin_public_service
+  weight: 40

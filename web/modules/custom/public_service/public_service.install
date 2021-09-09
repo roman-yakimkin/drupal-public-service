@@ -3,6 +3,40 @@
 use Drupal\taxonomy\Entity\Term;
 
 /**
+ * Implements hook_schema().
+ */
+function public_service_schema() {
+  $schema['public_service_plugin_data'] = [
+    'description' => 'The data for plugins by regions.',
+    'fields' => [
+      'plugin_id' => [
+        'description' => 'The plugin id',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => FALSE,
+      ],
+      'region_id' => [
+        'description' => 'The region id',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => FALSE,
+      ],
+      'data' => [
+        'description' => 'The plugin data in JSON-format',
+        'type' => 'text',
+        'not null' => TRUE,
+      ],
+    ],
+    'indexes' => [
+      'plugin_id' => ['plugin_id'],
+      'region_id' => ['region_id'],
+    ]
+  ];
+
+  return $schema;
+}
+
+/**
  * Add some metering devices programmatically.
  */
 function public_service_update_9001() {
@@ -27,5 +61,24 @@ function public_service_update_9001() {
       ],
     ]);
     $term->save();
+  }
+}
+
+/**
+ * Add some region configs for plugins.
+ */
+function public_service_update_9002() {
+  $region_configs = [
+    ['public_service_apartment_payment', 'RU-MOS',['rent_cost_default' => 3500]],
+    ['public_service_apartment_payment', 'RU-MOW',['rent_cost_default' => 2500]],
+    ['public_service_apartment_payment', 'RU-ROS',['rent_cost_default' => 1200]],
+    ['public_service_water_supply', 'RU-MOS', ['water_price' => 60]],
+    ['public_service_water_supply', 'RU-MOW', ['water_price' => 72]],
+    ['public_service_water_supply', 'RU-ROS', ['water_price' => 38]],
+  ];
+
+  foreach ($region_configs as [$plugin_id, $region_id, $config_data]) {
+    \Drupal::service('public_service.config_service')
+      ->setAllRegionalProperties($plugin_id, $region_id, $config_data);
   }
 }

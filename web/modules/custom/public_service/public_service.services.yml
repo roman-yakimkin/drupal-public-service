@@ -1,0 +1,8 @@
+services:
+  plugin.manager.public_service:
+    class: Drupal\public_service\PublicServicePluginManager
+    parent: default_plugin_manager
+
+  public_service.config_service:
+    class: Drupal\public_service\PluginConfigService
+    arguments: ['@database']
