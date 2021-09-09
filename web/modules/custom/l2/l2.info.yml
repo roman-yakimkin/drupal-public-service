@@ -1,0 +1,8 @@
+name: 'Drupal matrix L2'
+type: module
+description: 'A learning module for Drupal matrix L2.'
+package: YRV
+core_version_requirement: ^9
+dependencies:
+  - drupal:taxonomy
+version: '1.0.0'

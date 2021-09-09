@@ -1,8 +1,0 @@
-uuid: a237ba0b-37c5-4c8d-8388-9d5a9da0fdcd
-langcode: en
-status: true
-dependencies: {  }
-name: 'Metering devices'
-vid: metering_devices
-description: 'Devices to meter public services'
-weight: 0

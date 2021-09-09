@@ -25,6 +25,7 @@ module:
   help: 0
   history: 0
   image: 0
+  l2: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -33,7 +34,6 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
-  public_service: 0
   quickedit: 0
   rdf: 0
   search: 0

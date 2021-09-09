@@ -1,8 +1,0 @@
-uuid: 8fa732c6-98cd-4ac1-92a7-f0add7d55346
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: MqEHSxrhCtZUW_Q5402A_FbAGCXY5cD62FyPyEv4mUI
-id: electricity
-name: 'Electricity supply'

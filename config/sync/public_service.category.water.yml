@@ -1,8 +1,0 @@
-uuid: 4b638e90-4655-469d-8a20-495293cc71c9
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: Q7okUFNrFgwcns5endqTGmNOotC4uHAr94luDsbbGEg
-id: water
-name: 'Water supply'
