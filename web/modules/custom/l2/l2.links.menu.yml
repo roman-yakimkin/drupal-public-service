@@ -1,20 +1,25 @@
-d2.menu.simple_form:
+d2.menu.forms:
   route_name: d2.simple_form
   menu_name: 'main'
-  title: Simple Form
-  description: 'Simple Form'
-  weight: 0
+  title: Forms
+  description: 'Forms'
+  weight: 10
 
-d2.menu.simple_form_controller:
+d2.menu.forms.controller:
   route_name: d2.simple_form_controller
   menu_name: 'main'
+  expanded: 0
+  parent: d2.menu.forms
   title: Simple Form (controller)
   description: 'Simple Form via Controller'
   weight: 10
 
-d2.menu.ajax_form:
+d2.menu.forms.ajax:
   route_name: d2.ajax_form
   menu_name: 'main'
+  expanded: 0
+  parent: d2.menu.forms
   title: Ajax Form
   description: 'Ajax Form'
   weight: 20
+

@@ -1,4 +1,4 @@
-uuid: c37ed62c-7aba-4b51-9df4-ba086002f7e0
+uuid: f9b21101-200c-4fd0-a53f-3ae4ebae2b22
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,9 @@ dependencies:
     - system
   theme:
     - bartik
-_core:
-  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
-id: bartik_main_menu
+id: mainnavigation
 theme: bartik
-region: primary_menu
+region: sidebar_first
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
@@ -20,8 +18,8 @@ settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: true
 visibility: {  }
