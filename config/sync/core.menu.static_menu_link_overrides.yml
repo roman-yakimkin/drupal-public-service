@@ -5,5 +5,41 @@ definitions:
     parent: ''
     weight: 0
     expanded: false
+  d2__menu__simple_form:
+    weight: -50
+    parent: 'menu_link_content:422c0e35-5758-4e1b-bc74-2031bb68eeaa'
+    menu_name: main
+    enabled: true
+    expanded: false
+  standard__front_page:
+    weight: -50
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: false
+  d2__menu__simple_form_controller:
+    weight: -49
+    parent: 'menu_link_content:422c0e35-5758-4e1b-bc74-2031bb68eeaa'
+    menu_name: main
+    expanded: false
+    enabled: true
+  d2__menu__ajax_form:
+    weight: -48
+    parent: 'menu_link_content:422c0e35-5758-4e1b-bc74-2031bb68eeaa'
+    menu_name: main
+    expanded: false
+    enabled: true
+  d2__menu__static_query:
+    weight: -45
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  d2__menu__dynamic_query:
+    weight: -44
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

@@ -23,3 +23,33 @@ d2.menu.forms.ajax:
   description: 'Ajax Form'
   weight: 20
 
+d2.menu.db:
+  route_name: d2.database.static_query
+  menu_name: 'main'
+  title: DB
+  description: 'DB'
+  weight: 10
+
+d2.menu.db.dynamic_query:
+  route_name: d2.database.dynamic_query
+  parent: d2.menu.db
+  menu_name: 'main'
+  title: Dynamic query
+  description: 'Dynamic query'
+  weight: 20
+
+d2.menu.db.entity_query:
+  route_name: d2.database.entity_query
+  parent: d2.menu.db
+  menu_name: 'main'
+  title: Entity query
+  description: 'Entity query'
+  weight: 30
+
+d2.menu.db.insert_update_query:
+  route_name: d2.database.insert_update_query
+  parent: d2.menu.db
+  menu_name: 'main'
+  title: Insert/Update query
+  description: 'Insert/Update query'
+  weight: 40

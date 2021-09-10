@@ -1,5 +1,5 @@
 d2.simple_form:
-  path: '/simple-form'
+  path: '/forms'
   defaults:
     _title: 'Simple form.'
     _form: '\Drupal\l2\Form\SimpleForm'
@@ -7,7 +7,7 @@ d2.simple_form:
     _permission: 'access content'
 
 d2.simple_form_controller:
-  path: '/simple-form-controller'
+  path: '/forms/simple-form-controller'
   defaults:
     _title: 'Simple form via controller.'
     _controller: '\Drupal\l2\Controller\SimpleFormController::outputSimpleForm'
@@ -15,9 +15,41 @@ d2.simple_form_controller:
     _permission: 'access content'
 
 d2.ajax_form:
-  path: '/ajax-form'
+  path: '/forms/ajax-form'
   defaults:
     _title: 'Ajax form.'
     _form: '\Drupal\l2\Form\AjaxForm'
+  requirements:
+    _permission: 'access content'
+
+d2.database.static_query:
+  path: '/static-query'
+  defaults:
+    _title: 'Static query'
+    _controller: '\Drupal\l2\Controller\DatabaseController::staticQuery'
+  requirements:
+    _permission: 'access content'
+
+d2.database.dynamic_query:
+  path: '/dynamic-query'
+  defaults:
+    _title: 'Dynamic query'
+    _controller: '\Drupal\l2\Controller\DatabaseController::dynamicQuery'
+  requirements:
+    _permission: 'access content'
+
+d2.database.entity_query:
+  path: '/entity-query'
+  defaults:
+    _title: 'Entity query'
+    _controller: '\Drupal\l2\Controller\DatabaseController::entityQuery'
+  requirements:
+    _permission: 'access content'
+
+d2.database.insert_update_query:
+  path: '/insert-update-query'
+  defaults:
+    _title: 'Insert/update query'
+    _controller: '\Drupal\l2\Controller\DatabaseController::insertUpdateQuery'
   requirements:
     _permission: 'access content'
