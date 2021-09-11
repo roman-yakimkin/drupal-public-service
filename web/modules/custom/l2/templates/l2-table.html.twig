@@ -1,0 +1,28 @@
+{{ attach_library('l2/l2.roots') }}
+<div class="l2-table">
+    <div class="caption">{{ caption }}</div>
+    <table>
+        <thead>
+            <tr>
+                <th>NID</th>
+                <th>Title</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>roots</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in rows %}
+            <tr class="row">
+                <td>{{ loop.index }}</td>
+                <td>{{ row.title }}</td>
+                <td class="a">{{ row.a }}</td>
+                <td class="b">{{ row.b }}</td>
+                <td class="c">{{ row.c }}</td>
+                <td class="roots"></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

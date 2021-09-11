@@ -53,3 +53,10 @@ d2.menu.db.insert_update_query:
   title: Insert/Update query
   description: 'Insert/Update query'
   weight: 40
+
+d2.menu.theme:
+  route_name: d2.theme.theme_scripts
+  menu_name: 'main'
+  title: Theme
+  description: 'Theme scripts'
+  weight: 20

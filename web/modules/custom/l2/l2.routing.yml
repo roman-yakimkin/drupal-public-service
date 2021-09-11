@@ -53,3 +53,11 @@ d2.database.insert_update_query:
     _controller: '\Drupal\l2\Controller\DatabaseController::insertUpdateQuery'
   requirements:
     _permission: 'access content'
+
+d2.theme.theme_scripts:
+  path: '/theme'
+  defaults:
+    _title: 'Theme'
+    _controller: '\Drupal\l2\Controller\ThemeController::simple'
+  requirements:
+    _permission: 'access content'

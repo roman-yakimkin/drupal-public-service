@@ -1,0 +1,6 @@
+l2.roots:
+  js:
+    js/getRoots.js: {}
+  css:
+    component:
+      css/roots.css: {}

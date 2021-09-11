@@ -1,1 +1,15 @@
 <?php
+
+/**
+ * Implements hook_theme().
+ */
+function l2_theme($existing, $type, $theme, $path) {
+  return [
+    'l2_table' => [
+      'variables' => [
+        'caption' => NULL,
+        'rows' => NULL,
+      ],
+    ]
+  ];
+}
