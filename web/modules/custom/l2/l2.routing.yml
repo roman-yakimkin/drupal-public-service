@@ -1,3 +1,6 @@
+route_callbacks:
+  - '\Drupal\l2\Routing\Routes::routesList'
+
 d2.simple_form:
   path: '/forms'
   defaults:
