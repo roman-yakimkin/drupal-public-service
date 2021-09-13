@@ -67,3 +67,11 @@ d2.menu.render:
   title: Render
   description: 'Render elements'
   weight: 50
+
+d2.menu.render.cache_max_age:
+  route_name: d2.render.cache_max_age
+  parent: d2.menu.render
+  menu_name: 'main'
+  title: Cache max age
+  description: 'Cache max age'
+  weight: 10

@@ -12,6 +12,9 @@ class RenderController extends ControllerBase {
 
   /**
    * Simple controller to output render arrays.
+   *
+   * @return array
+   *   Rendered array as an associative array.
    */
   public function simple(): array {
     $output = [];
@@ -39,6 +42,22 @@ class RenderController extends ControllerBase {
     ];
 
     return $output;
+  }
+
+  /**
+   * A controller of cached render element.
+   *
+   * @return array
+   *   Rendered array as an associative array.
+   */
+  public function cached(): array {
+    $value = rand(0, 1000);
+    return [
+      '#markup' => $value,
+      '#cache' => [
+        'max-age' => 20,
+      ],
+    ];
   }
 
 }

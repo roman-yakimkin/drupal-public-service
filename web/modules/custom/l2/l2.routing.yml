@@ -73,5 +73,12 @@ d2.render.number_transform:
   requirements:
     _permission: 'access content'
 
+d2.render.cache_max_age:
+  path: '/render/cache-max-age'
+  defaults:
+    _title: 'Cache max age'
+    _controller: '\Drupal\l2\Controller\RenderController::cached'
+  requirements:
+    _permission: 'access content'
 
 
