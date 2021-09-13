@@ -59,4 +59,11 @@ d2.menu.theme:
   menu_name: 'main'
   title: Theme
   description: 'Theme scripts'
-  weight: 20
+  weight: 30
+
+d2.menu.render:
+  route_name: d2.render.number_transform
+  menu_name: 'main'
+  title: Render
+  description: 'Render elements'
+  weight: 50

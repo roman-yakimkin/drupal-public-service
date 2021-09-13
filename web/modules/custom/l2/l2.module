@@ -10,6 +10,13 @@ function l2_theme($existing, $type, $theme, $path) {
         'caption' => NULL,
         'rows' => NULL,
       ],
-    ]
+    ],
+    'l2_number_transform' => [
+      'variables' => [
+        'number' => 0,
+        'to' => 0,
+        'transformed' => 0,
+      ]
+    ],
   ];
 }

@@ -64,3 +64,14 @@ d2.theme.theme_scripts:
     _controller: '\Drupal\l2\Controller\ThemeController::simple'
   requirements:
     _permission: 'access content'
+
+d2.render.number_transform:
+  path: '/render'
+  defaults:
+    _title: 'Render'
+    _controller: '\Drupal\l2\Controller\RenderController::simple'
+  requirements:
+    _permission: 'access content'
+
+
+
