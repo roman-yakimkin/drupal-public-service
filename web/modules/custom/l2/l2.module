@@ -34,3 +34,23 @@ function l2_node_presave(NodeInterface $node) {
     $event_dispatcher->dispatch($event, TestContentSaveEvent::EVENT_NAME);
   }
 }
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function l2_node_update(NodeInterface $node) {
+  if ($node->getType() == 'test_content') {
+    \Drupal::moduleHandler()->invokeAll('test_content_updated', [$node]);
+  }
+}
+
+/**
+ * Implements hook_test_content_updated().
+ */
+function l2_test_content_updated(NodeInterface $node) {
+  $count_symbols = strlen($node->body->value);
+  \Drupal::messenger()->addMessage(t('Content "@title" contains @count symbols', [
+    '@title' => $node->getTitle(),
+    '@count' => $count_symbols,
+  ]));
+}
