@@ -4,3 +4,7 @@ l2.roots:
   css:
     component:
       css/roots.css: {}
+
+l2.current_time:
+  js:
+    js/currentTime.js: {}
