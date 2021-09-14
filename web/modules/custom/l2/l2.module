@@ -1,9 +1,12 @@
 <?php
 
+use Drupal\l2\Event\TestContentSaveEvent;
+use Drupal\node\NodeInterface;
+
 /**
  * Implements hook_theme().
  */
-function l2_theme($existing, $type, $theme, $path) {
+function l2_theme($existing, $type, $theme, $path): array {
   return [
     'l2_table' => [
       'variables' => [
@@ -19,4 +22,15 @@ function l2_theme($existing, $type, $theme, $path) {
       ]
     ],
   ];
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function l2_node_presave(NodeInterface $node) {
+  if ($node->getType() == 'test_content') {
+    $event = new TestContentSaveEvent($node);
+    $event_dispatcher = \Drupal::service('event_dispatcher');
+    $event_dispatcher->dispatch($event, TestContentSaveEvent::EVENT_NAME);
+  }
 }

@@ -3,3 +3,7 @@ services:
     class: Drupal\l2\Routing\RouteSubscriber
     tags:
       - { name: event_subscriber }
+  l2.upcase_event_subscriber:
+    class: Drupal\l2\EventSubscriber\UpcaseEventSubscriber
+    tags:
+      - {name: event_subscriber}
