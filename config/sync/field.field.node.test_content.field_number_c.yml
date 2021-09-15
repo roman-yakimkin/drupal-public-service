@@ -1,0 +1,23 @@
+uuid: d9f2c356-96b0-48a1-9053-68fec1bd55be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_c
+    - node.type.test_content
+id: node.test_content.field_number_c
+field_name: field_number_c
+entity_type: node
+bundle: test_content
+label: 'Number C'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float -100
+  max: !!float 100
+  prefix: ''
+  suffix: ''
+field_type: float
