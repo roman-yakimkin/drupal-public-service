@@ -75,3 +75,10 @@ d2.menu.render.cache_max_age:
   title: Cache max age
   description: 'Cache max age'
   weight: 10
+
+d2.menu.plugin:
+  route_name: d2.plugin.calc_taxes
+  menu_name: 'main'
+  title: Plugin taxes
+  description: 'Plugin calc taxes'
+  weight: 70

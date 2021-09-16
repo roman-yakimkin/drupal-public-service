@@ -7,3 +7,6 @@ services:
     class: Drupal\l2\EventSubscriber\UpcaseEventSubscriber
     tags:
       - {name: event_subscriber}
+  plugin.manager.tax_calculator:
+    class: Drupal\l2\TaxCalculationManager
+    parent: default_plugin_manager

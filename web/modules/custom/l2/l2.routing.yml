@@ -81,4 +81,11 @@ d2.render.cache_max_age:
   requirements:
     _permission: 'access content'
 
+d2.plugin.calc_taxes:
+  path: '/plugin/calc-taxes'
+  defaults:
+    _title: 'Plugin'
+    _form: '\Drupal\l2\Form\PluginForm'
+  requirements:
+    _permission: 'access content'
 
